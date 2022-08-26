@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaEnvelope, FaPhoneAlt}  from "react-icons/fa";
 import "./Header.scss";
+import Selector from "./Selector";
 
 const Header = () => {
   return (
@@ -27,6 +28,18 @@ const Header = () => {
         <div className='Header__second'>
 
         </div>
+<<<<<<< Updated upstream
+=======
+      </div>
+
+      <div className="Header__second">
+        <img src="https://ogami-react.vercel.app/assets/images/logo.png" alt="logo" />
+
+        <div className="Header__second--Search">
+            <Selector />
+        </div>
+      </div>
+>>>>>>> Stashed changes
     </header>
   )
 }

@@ -16,6 +16,67 @@
             }
 
         }
+<<<<<<< Updated upstream
         
+=======
+
+        &--right{
+            @include flex(row,nowrap,center,center);
+            gap: 20px;
+            & ul{
+
+                list-style: none;
+                @include flex(row,nowrap,center,center);
+                gap:10px;
+            }
+
+            & .divider{
+                color:#ebebeb;
+                padding-bottom:5px;
+            }
+
+            & .country{
+               width: 120px;
+               padding-bottom: 5px;
+
+                img{
+                    width: 20px;
+                }
+
+                & p{
+                    padding-left: 10px;
+                    display: inline-block;
+                }
+
+                & .arrow{
+
+                    svg{
+                        padding-top: 8px;
+                    }
+                }
+            }
+
+            & .user{
+
+                & p{
+                     padding-left: 10px;
+                     display: inline-block;
+                 }
+             }
+        }
+    }
+
+
+    &__second{
+
+        padding: 30px 100px;
+        @include flex(row, nowrap, center, center);
+        gap: 10px;
+
+        &--Search{
+         
+        }
+
+>>>>>>> Stashed changes
     }
 }
