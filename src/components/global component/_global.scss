@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'Cera Regular';
+    src: url(../../fonts/Regular.ttf);
+}
 
 $font-color : "#252525";
+$primary-font: 'Cera Regular';
+
 
 @mixin flex($direction, $wrap, $justify, $align){
 
