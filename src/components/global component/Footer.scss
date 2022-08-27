@@ -1,0 +1,125 @@
+@import './global';
+
+
+// $direction, $wrap, $justify, $align)
+
+.Footer {
+
+
+  font-family: $primary-font;
+
+  @include flex(row, nowrap, left, center);
+  height: 30vh;
+  padding: 0 100px;
+  border-bottom: 1px rgb(235, 232, 232) solid;
+
+  &-info {
+    list-style: none;
+    flex: 1;
+    line-height: 2.3rem;
+    color: gray;
+
+    li {
+      font-weight: 500;
+    }
+
+    ul {
+      @include flex(row, nowrap, left, center);
+      @extend .Footer-info;
+      gap: 1rem;
+      margin-top: 5px;
+
+      li {
+        background-color: #eaeff4;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding-top: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .7s;
+
+
+
+        &:hover {
+          background-color: #a5d470;
+          border: none;
+        }
+      }
+    }
+  }
+
+  &-links {
+
+    @include flex(row, nowrap, left, left);
+    @extend .Footer-info;
+
+    div {
+      flex: 1;
+
+      p {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: black;
+      }
+
+      li:hover {
+        color: #a5d470;
+        cursor: pointer;
+        transition: .3s;
+      }
+    }
+  }
+
+  &-subs {
+
+
+    line-height: 1.5rem;
+
+    & :nth-child(1) {
+      font-weight: 500;
+    }
+
+    & :nth-child(2) {
+      margin-top: 10px;
+      color: gray;
+      max-width: 20rem;
+    }
+
+    form {
+
+      margin-top: 20px;
+
+      input[type=text] {
+        height: 2.5rem;
+        padding: 20px;
+        background-color: #eaeff4;
+        border: none;
+        border-radius: 2rem 0px 0px 2rem;
+        outline: none;
+        font-weight: 500;
+        font-size: .9rem;
+
+      }
+
+      button[type=button] {
+        height: 2.5rem;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 0 2rem 2rem 0;
+        background-color: #a5d470;
+        cursor: pointer;
+        font-weight: 600;
+        color: white;
+      }
+    }
+
+
+  }
+}
+
+.Footer-copyright {
+  padding: 10px 100px;
+  font-weight: 500;
+  color: gray;
+}
