@@ -3,9 +3,14 @@
     src: url(../../fonts/Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Cera Medium';
+    src: url(../../fonts/Medium.ttf);
+}
+
 $font-color : "#252525";
 $primary-font: 'Cera Regular';
-
+$secondary-font: 'Cera Medium';
 
 @mixin flex($direction, $wrap, $justify, $align){
 

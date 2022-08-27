@@ -59,6 +59,13 @@ const Header = () => {
         <Logo />
         <Selector />
 
+        <ul>
+          <li>Home</li>
+          <li>Shop</li>
+          <li>About Us</li>
+          <li>Blog</li>
+        </ul>
+
       </div>
     </header>
   );
