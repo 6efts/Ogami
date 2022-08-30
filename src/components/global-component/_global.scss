@@ -13,6 +13,11 @@
     src: url(../../fonts/Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Cera Black';
+    src: url(../../fonts/Black.ttf);
+}
+
 //font colors
 $font-color : #252525;
 $font-color-main : #88c74a;
@@ -21,6 +26,7 @@ $font-color-main : #88c74a;
 $primary-font: 'Cera Regular';
 $secondary-font: 'Cera Medium';
 $bold-font: 'Cera Bold';
+$black-font: 'Cera Black';
 
 //flex mixin
 @mixin flex($direction, $wrap, $justify, $align){
@@ -63,3 +69,8 @@ $bold-font: 'Cera Bold';
     transition: .2s ease-in-out;
 }
 
+
+.img{
+    width: 100%;
+    object-fit: contain;
+}

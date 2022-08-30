@@ -22,4 +22,9 @@
     &__navlist{
         margin: 50px 0;
     }
+
+    &__products{
+        @include flex(row,wrap,center,center);
+        gap:20px;
+    }
 }
