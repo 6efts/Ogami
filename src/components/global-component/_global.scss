@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Cera Regular';
+    src: url(../../fonts/Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cera Medium';
+    src: url(../../fonts/Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Cera Bold';
+    src: url(../../fonts/Bold.ttf);
+}
+
+//font colors
+$font-color : #252525;
+$font-color-main : #88c74a;
+
+//font variables
+$primary-font: 'Cera Regular';
+$secondary-font: 'Cera Medium';
+$bold-font: 'Cera Bold';
+
+//flex mixin
+@mixin flex($direction, $wrap, $justify, $align){
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
+//button mixin
+
+.button{
+    border-radius:50px;
+    background-color: $font-color-main;
+    color: white;
+    height: 45px;
+    width: 150px;
+    border:none;
+    font-family: $bold-font;
+    cursor: pointer;
+}
+
+.button:hover{
+   opacity: 0.8;
+}
+
+//image hover
+
+.image{
+    width: 100%;
+    object-fit: contain;
+}
+
+.image:hover{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+

@@ -1,0 +1,55 @@
+@import '../global-component/global';
+
+.Hero{
+    background: url('https://ogami-react.vercel.app/assets/images/hero-slider/one/bg-1.png');
+    @include flex(row, nowrap,center,center);
+    margin: 20px 100px 10px;
+    height: 75vh;
+    gap:100px;
+
+    &__details{
+        @include flex(column, nowrap,center,none);
+        gap:10px;
+        width: 500px;
+        padding-left: 50px;
+        h4{
+            color: $font-color-main;
+            font-size: .875em;
+        }
+
+        h2{
+            color: $font-color;
+            font-size: 3.75em;
+        }
+
+        p{
+            color: #636363;
+            font-family: $secondary-font;
+            font-size: 1.3em;
+
+            span{
+                color: $font-color-main;
+                font-size: 1.875em;
+                font-family: $bold-font;
+            }
+
+            
+        }
+
+        button{
+            margin-top: 30px;
+            @extend .button;
+        }
+        
+    }
+
+    &__image{
+        width: 30%;
+        text-align: right;
+
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
