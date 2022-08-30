@@ -1,0 +1,13 @@
+@import '../global-component/global';
+
+.NavList{
+    
+    ul {
+    list-style: none;
+    @include flex(row,nowrap,center,center);
+    gap: 20px;
+    color: #b2b2b2;
+    font-family: $bold-font;
+    }
+
+}
