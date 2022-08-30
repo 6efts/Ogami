@@ -1,7 +1,9 @@
 import React from "react";
-import { FaEnvelope, FaPhoneAlt, FaFacebookF, FaTwitter, FaLinkedin, FaPinterestP, FaAngleDown, FaUser } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt, FaFacebookF, FaTwitter, FaLinkedin, FaPinterestP, FaAngleDown, FaUser, FaRegHeart } from "react-icons/fa";
+import {AiOutlineShopping} from "react-icons/ai";
 import "./Header.scss";
 import Logo from "./Logo";
+import Searchbar from "./Searchbar";
 import Selector from "./Selector";
 
 const Header = () => {
@@ -57,7 +59,12 @@ const Header = () => {
       <div className="Header__second">
       
         <Logo />
-        <Selector />
+
+        <div className="searchBar">
+          <Selector />
+          <Searchbar />
+        </div>
+        
 
         <ul>
           <li>Home</li>
@@ -65,6 +72,17 @@ const Header = () => {
           <li>About Us</li>
           <li>Blog</li>
         </ul>
+
+        <div className="cart-section">
+          <FaRegHeart 
+            size={20}
+          />  
+          <AiOutlineShopping 
+            size={25}
+          />
+          <p>$0.00</p>
+        </div>
+        
 
       </div>
     </header>

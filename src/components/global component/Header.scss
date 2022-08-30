@@ -85,7 +85,7 @@
     &__second{
 
         padding: 30px 100px;
-        @include flex(row, nowrap, space-evenly,center);
+        @include flex(row, nowrap, space-between,center);
 
         & ul{
             @include flex(row, nowrap, center,center);
@@ -94,6 +94,15 @@
             font-family: $secondary-font;
             font-weight: bold;
             text-transform: uppercase;
+        }
+
+        & .searchBar{
+            @include flex(row, nowrap, center, center);
+        }
+
+        & .cart-section{
+            @include flex(row, nowrap, center, center);
+            gap:20px;
         }
         
     }

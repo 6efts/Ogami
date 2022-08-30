@@ -18,6 +18,7 @@ const Selector = () => {
         control: (styles) => ({
             ...styles,
             width: '200px',
+            borderRadius:'none'
           
         }),
       

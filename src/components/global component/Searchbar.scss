@@ -1,0 +1,17 @@
+.SearchBar{
+    & input{
+        height: 38px;
+        border: 1px solid  #CCCCCC;
+        border-left: none;
+        width: 300px;
+
+    }
+
+    & button{
+        height: 38px;
+        width: 50px;
+        border: none;
+        background-color: #88c74a;
+    }
+
+}
