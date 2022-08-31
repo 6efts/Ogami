@@ -1,0 +1,32 @@
+@import '../global-component/global';
+
+
+.Deals{
+    background-image: url('https://ogami-react.vercel.app/assets/images/sections/dale-of-week/two/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3.125em 0;
+    @include flex(row,wrap, center,center);
+    gap:20px;  
+
+    &__content{
+        text-align: center;
+
+        h2{
+            font-family: $bold-font;
+            font-size: 2.75em;
+        }
+        p{
+            font-family: $primary-font;
+            color: $font-grey;
+        }
+      
+    }
+
+
+    &__image{
+        animation: infinity 1s linear infinite;
+    }
+
+}

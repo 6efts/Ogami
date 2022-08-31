@@ -1,0 +1,20 @@
+@import '../global-component/global';
+
+.Services{
+    margin: 50px 100px;
+    border: 1px solid #f5f5f5;
+    @include flex(row, wrap, space-evenly,center);
+    gap:20px;
+
+    &__list{
+        width: 25vh;
+        margin: 50px 0;
+        text-align: center;
+        
+
+        & h4{
+            font-family: $bold-font;
+            font-size: 1rem;
+        }
+    }
+}

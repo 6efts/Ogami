@@ -21,6 +21,7 @@
 //font colors
 $font-color : #252525;
 $font-color-main : #88c74a;
+$font-grey: #636363;
 
 //font variables
 $primary-font: 'Cera Regular';
@@ -73,4 +74,20 @@ $black-font: 'Cera Black';
 .img{
     width: 100%;
     object-fit: contain;
+}
+
+
+@keyframes infinity {
+    
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }
