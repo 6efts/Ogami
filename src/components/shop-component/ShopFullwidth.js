@@ -35,47 +35,7 @@ const ShopFullwidth = () => {
         <div className="Shop-cont__cards">
           <Card />
         </div>
-        <div className="Shop-cont__featured">
-          <h3 className="featured__title">Featured Products</h3>
-          <div className="featured__products">
-            <div>
-              <div>
-                <img src="https://ogami-react.vercel.app/assets/images/products/1.png" alt="" />
-              </div>
-              <div>
-                <p>Fresh Grapes</p>
-                <p>$6.99<span>$9.99</span></p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src="https://ogami-react.vercel.app/assets/images/products/2.png" alt="" />
-              </div>
-              <div>
-                <p>Green Chrusanthemum</p>
-                <p>$5.99<span></span></p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src="https://ogami-react.vercel.app/assets/images/products/3.png" alt="" />
-              </div>
-              <div>
-                <p>Mustard Australia</p>
-                <p>$29.00<span></span></p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src="https://ogami-react.vercel.app/assets/images/products/4.png" alt="" />
-              </div>
-              <div>
-                <p>Grouped Product</p>
-                <p>$15.00<span>$17.00</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   )

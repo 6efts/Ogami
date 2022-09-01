@@ -1,0 +1,32 @@
+@import '../global-component/global';
+
+.sliderStyles {
+  height: 100%;
+  @include flex(row, nowrap, left, left);
+
+  .sliderImages {
+    border: 1px solid rgb(231, 229, 229);
+    margin-bottom: 20px;
+
+    &:active {
+      border: 1px solid green;
+    }
+
+    img {
+      height: 100px;
+      width: 120px;
+
+    }
+  }
+
+  .slider {
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(231, 229, 229);
+    margin: 0 20px;
+    height: 90%;
+
+  }
+}
