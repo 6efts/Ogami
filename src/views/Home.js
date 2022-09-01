@@ -1,6 +1,4 @@
 import React from 'react';
-import Footer from '../components/global-component/Footer';
-import Header from '../components/global-component/Header';
 import Deals from '../components/home component/Deals';
 import FeaturedProducts from '../components/home component/FeaturedProducts';
 import Hero from '../components/home component/Hero';
