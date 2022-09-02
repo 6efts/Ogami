@@ -1,0 +1,26 @@
+@import '../global-component/global';
+
+.Timer{
+
+    @include flex(row, nowrap, center, center);
+    gap:30px;
+
+    &__content{
+        background-color: #fff;
+        width: 50px;
+        height: 65px;
+        border-radius: 5px;
+
+        & h2{
+            color: $font-color;
+        }
+
+        & p{
+            color: $font-color-main;
+            font-size: 1.875rem;
+            font-family: $bold-font;
+        }
+    
+    }
+
+}

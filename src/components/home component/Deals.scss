@@ -8,7 +8,7 @@
     background-position: center;
     padding: 3.125em 0;
     @include flex(row,wrap, center,center);
-    gap:20px;  
+    gap:50px;  
 
     &__content{
         text-align: center;
@@ -20,6 +20,15 @@
         p{
             font-family: $primary-font;
             color: $font-grey;
+        }
+
+        &--timer{
+            margin-top: 30px;
+        }
+
+        & button{
+            @extend .button;
+            margin-top: 30px;
         }
       
     }
