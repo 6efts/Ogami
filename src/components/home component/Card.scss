@@ -5,6 +5,7 @@
     @include flex(column, nowrap,center,center);
     padding: 7.5px;
     width: 250px;
+    overflow: hidden;
 
     &:hover{
         box-shadow: 1px 2px 37px -2px rgba(0,0,0,0.5);
@@ -12,12 +13,23 @@
         -moz-box-shadow: 1px 2px 37px -2px rgba(0,0,0,0.5);
         transition: .2s ease-in-out;
 
+        img{
+            transform: scale(1.05);
+        }
+
+        .Card__icons{
+            animation: moveTop 0.1s;
+            visibility: visible;
+        }
+
+        
     }
     
     &__image{
         width: 180px;
         height: 180px;
         @include flex(row,nowrap,center,center);
+        overflow:hidden;
 
         & img{
             @extend .img;
@@ -46,5 +58,30 @@
             text-overflow: ellipsis;
         }
 
+    }
+
+    &__icons{
+        @include flex(row, nowrap, center, center);
+        gap:5px;
+        margin-top: 20px;
+        visibility: hidden;
+        & .--background{
+            background-color: rgba(128, 128, 128, 0.192);
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            @include flex(row, nowrap, center, center);
+
+            &:hover{
+                background-color: $font-color-main;
+            }
+
+            & .icons{
+
+                &:hover{
+                    color: white;
+                }
+            }
+        }
     }
 }

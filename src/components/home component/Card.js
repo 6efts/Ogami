@@ -1,5 +1,8 @@
 import {useState, useEffect} from 'react';
 import './Card.scss';
+import { FaRegHeart, FaRandom, FaEye } from "react-icons/fa";
+import { BiShoppingBag } from "react-icons/bi";
+
 
 const Card = () =>{
     const [items, setItems] = useState();
@@ -101,6 +104,26 @@ const Card = () =>{
                         </div>
 
                         <div className='Card__icons'>
+                            <div className='--background'>
+                              <FaRegHeart 
+                              className='icons'
+                              size={15}
+                              />
+                              
+                            </div>
+                            <div className='--background'>
+                              <BiShoppingBag 
+                              className='icons'/>
+                            </div>
+                            <div className='--background'>
+                              <FaRandom 
+                              className='icons'/>
+                            </div>
+                            <div className='--background'>
+                              <FaEye 
+                              className='icons'/>
+                            </div>
+                           
 
                         </div>
                     </div>
