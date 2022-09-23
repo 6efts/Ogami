@@ -6,6 +6,8 @@ import Logo from "./Logo";
 import Searchbar from "./Searchbar";
 import Selector from "./Selector";
 
+
+
 const Header = () => {
   return (
     <header className="Header">

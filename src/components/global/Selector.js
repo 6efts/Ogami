@@ -25,7 +25,7 @@ const Selector = () => {
       }
 
   return <Select options={options} styles={customStyles} width='200px'
-  menuColor='red'/>
+  menuColor='red' isMulti/>
   
 }
 

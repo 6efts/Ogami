@@ -1,9 +1,9 @@
 import React from 'react';
-import Deals from '../components/home component/Deals';
-import FeaturedProducts from '../components/home component/FeaturedProducts';
-import Hero from '../components/home component/Hero';
-import HeroOptions from '../components/home component/HeroOptions';
-import Services from '../components/home component/Services';
+import Deals from '../components/home/Deals';
+import FeaturedProducts from '../components/home/FeaturedProducts';
+import Hero from '../components/home/Hero';
+import HeroOptions from '../components/home/HeroOptions';
+import Services from '../components/home/Services';
 
 const Home = () => {
   return (

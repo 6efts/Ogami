@@ -4,14 +4,13 @@
 // $direction, $wrap, $justify, $align)
 
 .Footer {
-
-
   font-family: $primary-font;
-
   @include flex(row, nowrap, left, center);
   height: 30vh;
   padding: 0 100px;
   border-bottom: 1px rgb(235, 232, 232) solid;
+  margin-top: auto;
+
 
   &-info {
     list-style: none;

@@ -1,4 +1,4 @@
-@import '../global-component/global';
+@import '../global/global';
 
 .Product-Detail {
   @include flex (row, nowrap, left, left);
