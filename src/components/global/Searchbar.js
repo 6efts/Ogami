@@ -19,8 +19,10 @@ const AutocompleteItem = ({item}) => {
   return <li className='autocomplete__item'>
     <div className='autocomplete__item--imgContainer'>
       <img src={item.image} alt={item.name} />
+    </div>
+    <div className='autocomplete__item--content'>
       <p className='autocomplete__item--name'>{item.name}</p>
-      <p className='autocomplete__item--price'>{item.price}</p>
+      <p className='autocomplete__item--price'>${item.price}</p>
     </div>
   </li>
 }
@@ -49,7 +51,7 @@ const Searchbar = () => {
       return;
     }
 
-    const timer = setTimeout(sendRequest.bind(null, nameToSearch), 500);
+    const timer = setTimeout(sendRequest.bind(null, nameToSearch), 200);
     return () => {
       clearTimeout(timer)
     }

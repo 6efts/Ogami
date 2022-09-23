@@ -1,3 +1,5 @@
+@import '../global/global';
+
 .SearchBar{
     position: relative;
 
@@ -17,25 +19,39 @@
     }
 
     & .autocomplete__list {
-        width: 100%;
+        width: 85%;
         position: absolute;
-        top: 0;
-        left: 50%;
+        top: 20;
+        left: 0;
         // transform: translateX(-50%);
         display: flex;
         flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        padding: 10px 0;
 
         & .autocomplete__item {
-                
-            &--imgContainer {
-                width: 100%;
-                display: flex;
-                gap: 2rem;
-                background-color: red;
 
+            @include flex(row,nowrap,flex-start,center);
+            width: 100%;
+            padding: 0 20px;
+            gap: 2rem;
+            
+            &--imgContainer {
+                width: 60px;
+               
                 img {
-                    width: 100px;
+                    width: 100%;
+                    object-fit: contain;
                 }
+            }
+
+            &--content{
+                font-family: $primary-font;
+
+                & p:last-child{
+                    font-family: $secondary-font;
+                }
+                
             }
           
         }
